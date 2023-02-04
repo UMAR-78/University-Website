@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+/* ---------------------------------------------Header Setion css----------------------- */
 .header
 {
     min-height: 100vh;
@@ -100,23 +101,31 @@ nav
 }
 @media (max-width:700px)
 {
-    .text_box h1
+    /* .text_box h1
     {
         font-size: 20px;   
     }
     .text_box p
     {
         font-size: 10px;   
-    }
-    .menubar ul li
+    } */
+    /* .menubar ul li
     {
         display: block;
         padding: 20px 20px;
+        
+
     }
+    .menubar ul li a
+    {
+        color: #f44336;
+        font-size: 20px;
+    }
+   
     .menubar
     {
         position:absolute;
-        background: #f44336;
+        background: white;
         height: 100vh;
         width: 200px;
         top: 0;
@@ -124,6 +133,72 @@ nav
         text-align: left;
         z-index: 2;
         
+    } */
+    .menubar ul li a
+    {
+        display: none;
     }
    
+
+}
+ /* ---------------------------------------------Course Section CSS------------------------------------ */
+.course
+{
+    width: 80%;
+    text-align: center;
+    /* transform: translate(-50% -50%); */
+    margin: auto;
+    padding-top: 60px;
+}
+.course h1
+{
+    font-size: 36px;
+    font-weight: 600;
+}
+.course p
+{
+    line-height: 20px;
+    color: #777;
+    font-size: 14px;
+    font-weight: 370;
+    padding: 10px;
+
+}
+.row
+{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.course_col
+{
+    flex-basis: 31%;
+    background:#fff3f3;
+    border-radius: 4px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    transition: 1s;
+}
+.course_col h3{
+    margin: 10px 0px;
+    /* font-weight: 600; */
+    text-align: center;
+}
+.row
+{
+    box-sizing: border-box;
+    box-shadow: #f44336;
+}
+.course_col:hover
+{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media ( max-width:700px)
+{
+   .row
+   {
+    flex-direction: column;
+   }
 }
