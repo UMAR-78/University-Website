@@ -385,18 +385,29 @@ nav
 /* ------------------------------------Footer Section cSS */
 .Footer
 {
-    width: 80%;
+    width: 100%;
     margin: auto;
     text-align: center;
     padding-top: 40px;
-    margin-bottom: 30px;
-   
+    /* margin-bottom: 30px; */
+    background-color: black;
     
 }
+.Footer p
+{
+    color: white;
+    padding: 10px 40px;
+}
 .Footer h4{
-    font-size: 20px;
+    font-size: 30px;
     padding:10px;
+    color: white;
    
+}
+.Footer a
+{
+    color: #f44336;
+    text-decoration: none;
 }
 
 .Footer .fab 
